@@ -52,15 +52,15 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 
 	@Override
 	public void addArticolo(Articolo articolo) {
-		execute("INSERT into articoli (nome,codicearticolo,categoria,prezzo,colore,taglia,quantita) VALUES (?,?,?,?,?,?,?)", 
-				articolo.getNome(),articolo.getCodicearticolo(), articolo.getCategoria(), articolo.getPrezzo(), articolo.getColore(), articolo.getTaglia(), articolo.getQuantita());
+		execute("INSERT into articoli (nome,codicearticolo,categoria,prezzo,colore,taglia,quantita,sesso,brand) VALUES (?,?,?,?,?,?,?,?,?)", 
+				articolo.getNome(),articolo.getCodicearticolo(), articolo.getCategoria(), articolo.getPrezzo(), articolo.getColore(), articolo.getTaglia(), articolo.getQuantita(), articolo.getSesso(), articolo.getBrand());
 		
 	}
 
 	@Override
 	public void updateArticolo(Articolo articolo) {
-		execute("UPDATE articoli SET nome=?, codicearticolo=?, prezzo=?, colore=?, taglia=?, quantita=? WHERE id=?", 
-				articolo.getNome(), articolo.getCodicearticolo(), articolo.getPrezzo(), articolo.getColore(), articolo.getTaglia(), articolo.getQuantita(), articolo.getId());
+		execute("UPDATE articoli SET nome=?, codicearticolo=?, prezzo=?, colore=?, taglia=?, quantita=?, sesso=?, brand=? WHERE id=?", 
+				articolo.getNome(), articolo.getCodicearticolo(), articolo.getPrezzo(), articolo.getColore(), articolo.getTaglia(), articolo.getQuantita(), articolo.getSesso(), articolo.getBrand(), articolo.getId());
 		
 	}
 
