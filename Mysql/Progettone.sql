@@ -13,3 +13,23 @@ create table articoli (
 );
 
 select * from articoli;
+
+create table utenti (
+	id int primary key auto_increment,
+    username varchar(50),
+    password varchar(50),
+    nome varchar(50),
+    cognome varchar(50),
+    indirizzo varchar(200)
+);
+
+select * from utenti;
+
+create table acquisti(
+	id int primary key auto_increment,
+	idutente int,
+    idarticolo int,
+    importototale double,
+    foreign key(idutente) references utenti(id),
+    foreign key(idarticolo) references articoli(id)
+);
