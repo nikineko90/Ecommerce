@@ -12,13 +12,15 @@ public class Articolo implements IMappablePro{
 	private String colore;
 	private String taglia;
 	private int quantita;
+	private String sesso;
+	private String brand;
 	
 	public Articolo() {
 		super();
 	}
 
 	public Articolo(int id, String nome, String codicearticolo, String categoria, double prezzo, String colore,
-			String taglia, int quantita) {
+			String taglia, int quantita, String sesso, String brand) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -28,6 +30,8 @@ public class Articolo implements IMappablePro{
 		this.colore = colore;
 		this.taglia = taglia;
 		this.quantita = quantita;
+		this.sesso = sesso;
+		this.brand = brand;
 	}
 
 	public int getId() {
@@ -94,6 +98,21 @@ public class Articolo implements IMappablePro{
 		this.quantita = quantita;
 	}
 	
+	public String getSesso() {
+		return sesso;
+	}
+
+	public void setSesso(String sesso) {
+		this.sesso = sesso;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 	
 	
 }
