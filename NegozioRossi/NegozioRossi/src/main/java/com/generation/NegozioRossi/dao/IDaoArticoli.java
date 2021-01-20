@@ -15,4 +15,8 @@ public interface IDaoArticoli {
 	void updateArticolo(Articolo articolo);
 	
 	void deleteArticolo(int id);
+	
+	List<Articolo> articoli(String sesso);
+	
+	List<Articolo> ricercaArticoli(String ricerca);
 }
