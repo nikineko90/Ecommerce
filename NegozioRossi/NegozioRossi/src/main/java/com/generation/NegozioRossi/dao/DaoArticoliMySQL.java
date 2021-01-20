@@ -68,4 +68,37 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 	public void deleteArticolo(int id) {
 		execute("DELETE FROM articoli WHERE id=?", id);
 		
-	}}
+	}
+
+	
+	@Override
+	public List<Articolo> articoli(String sesso) {
+		List<Articolo> ris= new ArrayList<>();
+		
+		List<Map<String,String>> maps = getAll("SELECT * FROM articoli WHERE sesso = ?", sesso);
+		
+		for (Map<String, String> map : maps) {
+			Articolo a = new Articolo();
+			a.fromMap(map);
+			ris.add(a);
+		}
+		return ris;
+	}
+
+
+
+	@Override
+	public List<Articolo> ricercaArticoli(String ricerca) {
+		List<Articolo> ris = new ArrayList<>();
+		
+		List<Map<String,String>> maps = getAll("SELECT * FROM articoli where CONCAT(nome,brand,colore) like %?%", ricerca);
+		
+		for(Map<String, String> map : maps) {
+			Articolo a = new Articolo();
+			a.fromMap(map);
+			ris.add(a);
+		}
+		return ris;
+	}
+
+}
