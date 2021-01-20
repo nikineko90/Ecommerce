@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.NegozioRossi.dao.DaoArticoliMySQL;
@@ -24,11 +23,12 @@ public class ArticoliController {
 	private DaoArticoliMySQL dao;
 	
 	@GetMapping
-	public List<Articolo> get(@RequestParam(defaultValue = "") String sesso) {
-		if(sesso.equals(""))
+	public List<Articolo> get(String keyword, String sesso) {
+		if(keyword !=null)
+		return dao.ricercaArticoli(keyword);
+		if(sesso!=null) 
+			return dao.articoli(sesso);
 		return dao.articoli();
-		
-		return dao.articoli(sesso);
 	}
 	
 	@GetMapping("/{id}")
@@ -51,14 +51,5 @@ public class ArticoliController {
 		dao.updateArticolo(articolo);
 	}
 	
-	@GetMapping("/{ricerca}")
-	public List<Articolo> ricerca(@RequestParam(defaultValue="") String ricerca) {
-		System.out.println("Siam qui");
-		if(ricerca.equals("")) {
-			System.out.println("AHO non va");
-		}
-			return dao.ricercaArticoli(ricerca);
-		
-	}
 	
 }
