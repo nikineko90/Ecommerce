@@ -75,7 +75,7 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 	public List<Articolo> articoli(String sesso) {
 		List<Articolo> ris= new ArrayList<>();
 		
-		List<Map<String,String>> maps = getAll("SELECT * FROM articoli WHERE sesso = ?", sesso);
+		List<Map<String,String>> maps = getAll("SELECT distinct * FROM articoli WHERE sesso = ? group by nome", sesso);
 		
 		for (Map<String, String> map : maps) {
 			Articolo a = new Articolo();
@@ -88,10 +88,10 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 
 
 	@Override
-	public List<Articolo> ricercaArticoli(String ricerca) {
+	public List<Articolo> ricercaArticoli(String keyword) {
 		List<Articolo> ris = new ArrayList<>();
 		
-		List<Map<String,String>> maps = getAll("SELECT * FROM articoli where CONCAT(nome,brand,colore) like %?%", ricerca);
+		List<Map<String,String>> maps = getAll("SELECT * FROM articoli where concat(nome,brand) like '%" + keyword +"%'");
 		
 		for(Map<String, String> map : maps) {
 			Articolo a = new Articolo();
