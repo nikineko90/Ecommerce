@@ -18,5 +18,5 @@ public interface IDaoArticoli {
 	
 	List<Articolo> articoli(String sesso);
 	
-	List<Articolo> ricercaArticoli(String ricerca);
+	List<Articolo> ricercaArticoli(String keyword);
 }
