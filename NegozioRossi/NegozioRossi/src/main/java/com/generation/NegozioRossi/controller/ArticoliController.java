@@ -50,4 +50,14 @@ public class ArticoliController {
 		dao.updateArticolo(articolo);
 	}
 	
+	@GetMapping("/{ricerca}")
+	public List<Articolo> ricerca(@RequestParam(defaultValue="") String ricerca) {
+		System.out.println("Siam qui");
+		if(ricerca.equals("")) {
+			System.out.println("AHO non va");
+		}
+			return dao.ricercaArticoli(ricerca);
+		
+	}
+	
 }
