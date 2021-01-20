@@ -1,0 +1,212 @@
+/*
+    IMPORT DI FONTS
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+
+:root {
+    /*
+        DICHIARIAZIONE VARIABILI CSS
+    */
+  --colorePrimario: #51f0bb;
+  --bianco: #fff;
+  --nero: #222;
+  --grigio: #ececec;
+  --spazioBase: 0.1rem;
+  --transizioneBase: all 0.3s linear;
+}
+
+/*
+    RESET SU TUTTI GLI ELEMENTI.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*
+    SU TUTTO IL BODY, INVECE, HO MESSO IL COLORE DEL FONT NERO,
+    IL COLORE DELLO SFONDO DELL'ELEMENTO BIANCO, E IL FONT 
+    LATO CHE HO IMPORTATO.
+*/
+body {
+    color: var(--nero); 
+    background: var(--bianco);
+    font-family: "Lato", sans-serif;
+  }
+
+
+    /* 
+        HERO PAGINA
+    */
+.hero {
+    min-height: calc(100vh - 60px); /* prendo tutto lo schermo tranne i 60px usati per la navbar */
+    background: url("backround-foto.jpg") center/cover no-repeat; 
+    display: flex; /* la rendo flexbox */
+    align-items: center; 
+    justify-content: center; /* la proietto nel centro dello schermo */
+  }
+  .banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+  }
+  .banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--spazioBase);
+    margin-bottom: 3rem;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--spazioBase);
+    font-size: 1rem;
+    background: var(--colorePrimario);
+    color: var(--mainBlack);
+    border: 1px solid var(--colorePrimario);
+    transition: var(--transizioneBase);
+    cursor: pointer;
+  }
+  /*
+    QUANDO CON IL CURSORE VADO SOPRA IL BOTTONE, LO RENDO TRASPARENTE E IL COLORE DEL TESTO 
+    E DEI BORDI DIVENTA QUELLO CHE ERA IN ORIGINE.
+  */
+  .banner-btn:hover {
+    background: transparent;
+    color: var(--colorePrimario);
+  }
+  /* 
+    FINE HERO PAGINA
+  */
+
+  /* 
+    STILE PRODOTTI.
+  */
+
+.products {
+  padding: 4rem 0; /* metto del padding per ogni prodotto. */
+}
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spazioBase);
+}
+.products-center {
+  width: 90vw; /* deve sempre prendere il 90% della larghezza schermo */
+  margin: 0 auto;
+  max-width: 1170px; /* massimo questa larghezza */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* voglio che la mia colonna sia almeno 260px, e al più 1fr, in modo responsive */
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.bag-btn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background: var(--colorePrimario);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--spazioBase);
+  font-weight: bold;
+  transition: var(--transizioneBase);
+  transform: translateX(101%); 
+  cursor: pointer;
+}
+.bag-btn:hover {
+  color: var(--bianco);
+}
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--transizioneBase);
+}
+.img-container:hover .product-img {
+  opacity: 0.5;
+}
+
+.product h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--spazioBase);
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  letter-spacing: var(--spazioBase);
+  color: var(--colorePrimario);
+  text-align: center;
+}
+
+/* 
+  FINE STILE PRODOTTO.
+*/
+
+
+/*
+  NAVBAR
+*/
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  color: var(--bianco);
+  position: relative;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--colorePrimario);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--bianco);
+}
+/*
+  FINE NAVBAR
+*/
+  
+
+
+/*
+  FOOTER
+*/
+
+footer {
+  padding: 5rem 1rem;
+}
+footer p {
+  color: var(--bianco);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--spazioBase);
+  margin-bottom: 0;
+}
+
+/*
+  FINE FOOTER
+*/
