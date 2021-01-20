@@ -23,8 +23,11 @@ public class ArticoliController {
 	private DaoArticoliMySQL dao;
 	
 	@GetMapping
-	public List<Articolo> get() {
+	public List<Articolo> get(@RequestParam(defaultValue = "") String sesso) {
+		if(sesso.equals(""))
 		return dao.articoli();
+		
+		return dao.articoli(sesso);
 	}
 	
 	@GetMapping("/{id}")
