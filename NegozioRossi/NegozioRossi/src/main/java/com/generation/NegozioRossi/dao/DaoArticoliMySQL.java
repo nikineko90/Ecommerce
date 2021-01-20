@@ -75,7 +75,7 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 	public List<Articolo> articoli(String sesso) {
 		List<Articolo> ris= new ArrayList<>();
 		
-		List<Map<String,String>> maps = getAll("SELECT * FROM articoli WHERE sesso = ?", sesso);
+		List<Map<String,String>> maps = getAll("SELECT distinct * FROM articoli WHERE sesso = ? group by nome", sesso);
 		
 		for (Map<String, String> map : maps) {
 			Articolo a = new Articolo();
