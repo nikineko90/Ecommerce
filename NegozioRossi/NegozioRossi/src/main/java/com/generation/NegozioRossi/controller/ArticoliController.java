@@ -23,11 +23,12 @@ public class ArticoliController {
 	private DaoArticoliMySQL dao;
 	
 	@GetMapping
-	public List<Articolo> get(@RequestParam(defaultValue = "") String sesso) {
-		if(sesso.equals(""))
+	public List<Articolo> get(String keyword, String sesso) {
+		if(keyword !=null)
+		return dao.ricercaArticoli(keyword);
+		if(sesso!=null) 
+			return dao.articoli(sesso);
 		return dao.articoli();
-		
-		return dao.articoli(sesso);
 	}
 	
 	@GetMapping("/{id}")
@@ -50,14 +51,5 @@ public class ArticoliController {
 		dao.updateArticolo(articolo);
 	}
 	
-	@GetMapping("/{ricerca}")
-	public List<Articolo> ricerca(@RequestParam(defaultValue="") String ricerca) {
-		System.out.println("Siam qui");
-		if(ricerca.equals("")) {
-			System.out.println("AHO non va");
-		}
-			return dao.ricercaArticoli(ricerca);
-		
-	}
 	
 }
