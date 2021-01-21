@@ -18,7 +18,6 @@ public class DaoArticoliMySQL extends BasicDao implements IDaoArticoli{
 			@Value("${db.user}")String user, 
 			@Value("${db.psw}")String password) {
 		super(dbAddress, user, password);
-		// TODO Auto-generated constructor stub
 	}
 
 
