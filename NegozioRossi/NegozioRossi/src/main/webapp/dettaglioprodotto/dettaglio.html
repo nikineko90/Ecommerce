@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Bello</title>
+        <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- MIO CSS -->
+      <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodotti</a>
+            <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="./donna/maindonna.html">Donna</a></li>
+              <li><a class="dropdown-item text-muted" href="./uomo/mainuomo.html">Uomo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chi siamo</a>
+          </li>
+        </ul>
+
+      </div>
+      <a href="carrello.html">
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+      </a>
+    </div>
+  </nav>
+<!-- FINE NAVBAR -->
+
+
+
+<!-- CAROUSEL PRODOTTO: (ESEMPIO)-->
+<section class="products">
+    <div class="products-center">
+        <div class="row">
+            <div class="col-4">
+                <div id="carouselExampleControls" class="carousel slide dettaglio" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../prodotti/prodotto1.jpg" class="d-block w-100 img-fluid w3-image" width="600" height="400" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../prodotti/prodotto1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../prodotti/prodotto1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+    
+    
+            </div>
+
+            <div class="col-2">
+            </div>
+
+            <div class="col-6">
+                <div class="row mb-3">
+                    <h3>Nome prodotto: </h3> 
+                </div>
+                <div class="row mb-3">
+                    <h3>Prezzo: 1999€</h3>
+                </div>
+
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>Taglia</option>
+                    <option value="1">L</option>
+                    <option value="2">XL</option>
+                    <option value="3">XXL</option>
+                </select>
+
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>Colore</option>
+                    <option value="1">Rosso</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Bianco</option>
+                    <option value="4">Giallo</option>
+                </select>
+
+                <button class="carrello-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    aggiungi al carrello
+                  </button>
+
+
+
+            </div>
+    
+    
+          </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mb-3">
+    <!-- footer -->
+    <footer class="section bg-dark fixed-bottom">
+        <p>
+          copyright &copy; C&C
+          <span id="date"></span>. all rights reserved
+        </p>
+      </footer>
+</div>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- il mio javascript -->
+<!-- script src="app.js"></script>  -->
+
+</body>
+</html>
