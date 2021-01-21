@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Bello</title>
+        <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- MIO CSS -->
+      <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodotti</a>
+          <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item text-muted" href="./maindonna.html">Donna</a></li>
+            <li><a class="dropdown-item text-muted" href="../uomo/mainuomo.html">Uomo</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chi siamo</a>
+        </li>
+      </ul>
+
+    </div>
+    <a href="../carrello/carrello.html">
+      <div class="cart-btn">
+          <span class="nav-icon">
+              <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+      </div>
+    </a>
+  </div>
+</nav>
+<!-- FINE NAVBAR -->
+
+<!-- PRODOTTI IN VETRINA (SCAFFHOLDING) -->
+
+<section class="products">
+    <div class="section-title">
+        <h2>prodotti da donna</h2>
+    </div>
+
+
+
+    <!-- SINGOLO PRODOTTO: -->
+    <div class="products-center">
+        <article class="product">
+            <div class="img-container">
+                <img src="../prodotti/prodotto1.jpg" alt="" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    aggiungi al carrello
+                </button>
+                <h3>jeans da donna</h3>
+                <h4>19&euro;</h4>
+            </div>
+        </article>
+        
+        <article class="product">
+          <div class="img-container">
+              <img src="../prodotti/prodotto1.jpg" alt="" class="product-img">
+              <button class="bag-btn" data-id="1">
+                  <i class="fas fa-shopping-cart"></i>
+                  aggiungi al carrello
+              </button>
+              <h3>jeans da donna</h3>
+              <h4>19&euro;</h4>
+          </div>
+      </article>
+
+        <article class="product">
+            <div class="img-container">
+                <img src="../prodotti/prodotto1.jpg" alt="" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    aggiungi al carrello
+                </button>
+                <h3>jeans da donna</h3>
+                <h4>19&euro;</h4>
+            </div>
+        </article>
+
+        <article class="product">
+            <div class="img-container">
+                <img src="../prodotti/prodotto1.jpg" alt="" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    aggiungi al carrello
+                </button>
+                <h3>jeans da donna</h3>
+                <h4>19&euro;</h4>
+            </div>
+        </article>
+
+
+
+    </div>
+    
+
+
+
+</section>
+
+<!-- FINE PRODOTTI IN VETRINA -->
+
+
+
+<!-- FOOTER 
+<footer class="fixed-bottom text-white bg-dark">
+    <p class="text-center p-3">Copiright&copy;Best Dev</p>
+</footer>
+FINE FOOTER -->
+
+    <!-- footer -->
+    <footer class="section bg-dark">
+        <p>
+          copyright &copy; C&C
+          <span id="date"></span>. all rights reserved
+        </p>
+      </footer>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- il mio javascript -->
+<script src="donna.js"></script>
+
+</body>
+</html>
