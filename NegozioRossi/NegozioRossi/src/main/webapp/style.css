@@ -43,7 +43,7 @@ body {
     */
 .hero {
     min-height: calc(100vh - 60px); /* prendo tutto lo schermo tranne i 60px usati per la navbar */
-    background: url("backround-foto.jpg") center/cover no-repeat; 
+    background: url("background2.jpg") center/cover no-repeat; 
     display: flex; /* la rendo flexbox */
     align-items: center; 
     justify-content: center; /* la proietto nel centro dello schermo */
@@ -210,3 +210,21 @@ footer p {
 /*
   FINE FOOTER
 */
+
+
+/*
+  PAGINA DETTAGLIO:
+  stile del bottone:
+*/
+
+.carrello-btn{
+  top: 70%;
+  right: 0;
+  background: var(--colorePrimario);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--spazioBase);
+  font-weight: bold;
+  cursor: pointer;
+}
