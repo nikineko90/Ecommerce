@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- MIO CSS -->
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="stiledettaglio.css">
 </head>
 
 
@@ -26,8 +27,12 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Prodotti</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodotti</a>
+            <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="./donna/maindonna.html">Donna</a></li>
+              <li><a class="dropdown-item text-muted" href="./uomo/mainuomo.html">Uomo</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Chi siamo</a>
@@ -35,12 +40,14 @@
         </ul>
 
       </div>
-      <div class="cart-btn">
-        <span class="nav-icon">
-            <i class="fas fa-cart-plus"></i>
-        </span>
-        <div class="cart-items">0</div>
-    </div>
+      <a href="carrello.html">
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+      </a>
     </div>
   </nav>
 <!-- FINE NAVBAR -->
@@ -60,91 +67,37 @@
 </header>
 <!-- FINE BANNER-->
 
-<!-- PRODOTTI IN VETRINA (SCAFFHOLDING) -->
+<!-- DIVISORIO UOMO - DONNA -->
+
 
 <section class="products">
-    <div class="section-title">
-        <h2>prodotti del mese</h2>
-    </div>
-
-
-
-    <!-- SINGOLO PRODOTTO: -->
-    <div class="products-center">
-        <article class="product">
-            <div class="img-container">
-                <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
-                <button class="bag-btn" data-id="1">
+  <!--<div class="section-title"></div>-->
+  <div class="products-center">
+      <article class="product">
+          <div class="img-container">
+              <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
+              <a href="./uomo/mainuomo.html">
+                  <button class="bag-btn" data-id="1">
                     <i class="fas fa-shopping-cart"></i>
-                    aggiungi al carrello
-                </button>
-                <h3>jeans da donna</h3>
-                <h4>19&euro;</h4>
-            </div>
-        </article>
-        <article class="product">
-            <div class="img-container">
-                <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa-shopping-cart"></i>
-                    aggiungi al carrello
-                </button>
-                <h3>jeans da donna</h3>
-                <h4>19&euro;</h4>
-            </div>
-        </article>
-
-
-        <article class="product">
-            <div class="img-container">
-                <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa-shopping-cart"></i>
-                    aggiungi al carrello
-                </button>
-                <h3>jeans da donna</h3>
-                <h4>19&euro;</h4>
-            </div>
-        </article>
-
-        <article class="product">
-            <div class="img-container">
-                <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa-shopping-cart"></i>
-                    aggiungi al carrello
-                </button>
-                <h3>jeans da donna</h3>
-                <h4>19&euro;</h4>
-            </div>
-        </article>
-
-
-
-    </div>
-    
-
-
-
+                    vai ai prodotti
+                  </button>
+              </a>
+              <h3>UOMO</h3>
+          </div>
+      </article>
+          <article class="product">
+              <div class="img-container">
+                  <img src="./prodotti/prodotto1.jpg" alt="" class="product-img">
+                  <a href="./donna/maindonna.html">
+                    <button class="bag-btn" data-id="1">
+                      <i class="fas fa-shopping-cart"></i>
+                      vai ai prodotti
+                    </button>
+                  </a>
+                  <h3>DONNA</h3>
+              </div>
+          </article>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,7 +125,7 @@ FINE FOOTER -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <!-- il mio javascript -->
-<script src="app.js"></script>
+<!-- script src="app.js"></script>  -->
 
 </body>
 </html>
