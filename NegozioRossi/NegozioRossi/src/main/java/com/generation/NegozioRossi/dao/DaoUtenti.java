@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import com.generation.NegozioRossi.model.Utente;
 import com.generation.NegozioRossi.util.BasicDao;
 
+@Repository
 public class DaoUtenti extends BasicDao implements IDaoUtenti{
 
 	public DaoUtenti(@Value("${db.address}")String dbAddress, 
