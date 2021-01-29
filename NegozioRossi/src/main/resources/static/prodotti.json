@@ -1,0 +1,95 @@
+{
+    "prodotti":[
+        {
+            "id" : 1,
+            "nome" : "pantalone1",
+            "codicearticolo" : "codice1",
+            "categoria" : "brutta",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 2,
+            "nome" : "pantalone2",
+            "codicearticolo" : "codice2",
+            "categoria" : "bella",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 3,
+            "nome" : "pantalone3",
+            "codicearticolo" : "codice3",
+            "categoria" : "decente",
+            "prezzo" : 99.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 1,
+            "nome" : "pantalone1",
+            "codicearticolo" : "codice1",
+            "categoria" : "brutta",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 1,
+            "nome" : "pantalone1",
+            "codicearticolo" : "codice1",
+            "categoria" : "brutta",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 1,
+            "nome" : "pantalone1",
+            "codicearticolo" : "codice1",
+            "categoria" : "brutta",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        },
+        {
+            "id" : 1,
+            "nome" : "pantalone1",
+            "codicearticolo" : "codice1",
+            "categoria" : "brutta",
+            "prezzo" : 0.99,
+            "colore" : "giallo",
+            "taglia" : "L",
+            "quantita" : 5,
+            "sesso" : "M",
+            "brand" : "gucci",
+            "immagine": { "file": { "url": "./prodotti/prodotto1.jpg" } }
+        }
+    ] 
+}

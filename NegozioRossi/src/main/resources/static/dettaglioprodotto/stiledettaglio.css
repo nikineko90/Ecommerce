@@ -1,0 +1,25 @@
+
+:root {
+    /*
+        DICHIARIAZIONE VARIABILI CSS
+    */
+  --colorePrimario: #51f0bb;
+  --bianco: #fff;
+  --nero: #222;
+  --grigio: #ececec;
+  --spazioBase: 0.1rem;
+  --transizioneBase: all 0.3s linear;
+}
+
+.carrello-btn {
+    top: 70%;
+    right: 0;
+    background: var(--colorePrimario);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--spazioBase);
+    font-weight: bold;
+    transform: translateX(101%); 
+    cursor: pointer;
+  }
