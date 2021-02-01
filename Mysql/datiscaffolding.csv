@@ -1,0 +1,9 @@
+id,brand,categoria,codicearticolo,colore,immagine,nome,prezzo,quantita,sesso,taglia
+1,Cosi,Pantaloni,1629974374,nero,https://drive.google.com/uc?id=1QkJADyr4KaXJAKPAD6nG_QtUbUL0BgCJ,"Blazer slim fit",56.8,37,M,M
+2,Intimiss,Intimo,1951651383,bianco,https://drive.google.com/uc?id=1eNKwxq_Cpo-z4spSeN1qs7s3nbob6sRL,"Triangolo in cotone biologico",42.3,47,F,M
+3,OVC,Vestiti,3750085870,verde,https://drive.google.com/uc?id=1ZA5lJ-kwACbT8K0yGrbZxotpD8grgo6Q,"Vestito affascinante",62.5,69,F,XS
+4,Guessa,Giacche,6350243048,nero,https://drive.google.com/uc?id=1AhVmqt1NNFyAOD_IT4gFZcMuRxEOecRU,"Giacca di pelle",45.5,5,F,L
+5,OVC,"T-shirt e Top",8791932858,bianco,https://drive.google.com/uc?id=1YHP2vDGttoZzYTq_-47kMKgk5Xxdeypz,"Camicia slim fit",22.5,32,M,XS
+6,Cosi,Pantaloni,9467042770,verde,https://drive.google.com/uc?id=14CvPlHLTDlES2Tp_XYd1eYAstCqiIoV_,"Trench Doppiopetto",52.6,24,F,XS
+7,OVC,Camicie,1951651383,blu,https://drive.google.com/uc?id=1PEreLn7FQkvR0OwJ6C3QyxRlqNkCnA48,"Camicia in popeline slim fit",65.5,47,M,M
+11,OVC,Jeans,4325345233,blu,https://drive.google.com/uc?id=1vRqILxm7Fkec20Y-a7Cjh46vDrYj2k0S,"Jeans straight",72.5,22,M,L
